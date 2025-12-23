@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanMind - Dashboard</title>
+
+    <link rel="stylesheet" href="../../shared/css/variables.css">
+    <link rel="stylesheet" href="../../shared/css/standard.css">
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/assets.css">
+    <link rel="stylesheet" href="../../shared/css/header_footer.css">
+
+    <script src="../../shared/js/ui_helper.js"></script>
+    <script src="../../shared/js/api.js"></script>
+    <script src="../../shared/js/header.js"></script>
+
+    <script>
+        function checkNav() {
+            if (getAuthUserId() == null) document.querySelector("nav").remove();
+        };
+    </script>
+</head>
+
+<body onload="setHeader();checkNav()">
+    <header onclick="redirectToDashboard()" class="main_header w_full">
+        <img src="../../assets/icons/logo_icon.svg" alt="" srcset="">
+        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+    </header>
+    <main class="w_full d_flex_ss_gl font_white_color">
+
+        <nav class="font_sec_color w_full">
+            <a class="link_secondary" href="../dashboard/">Dashboard</a>
+            /
+            <a class="link_secondary" href="./index.html">Privacy Policy</a>
+        </nav>
+
+        <h1 class="font_prime_color">Privacy Policy</h1>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>1. General Information</h2>
+            <p>
+                This Privacy Policy explains how personal data is processed when using the KanMind
+                application. KanMind is a project developed as part of an educational program.
+            </p>
+
+            <h2>2. Educational Context</h2>
+            <p>
+                The frontend of this application is provided by the Developer Akademie as part of an
+                educational training program. The frontend itself does not independently process or
+                store personal data.
+            </p>
+            <p>
+                The backend and API services are developed and operated by the project participant
+                for learning and demonstration purposes.
+            </p>
+
+            <h2>3. Data Controller</h2>
+            <p>
+                The data controller for personal data processed via the backend API is:
+            </p>
+            <p>
+                <strong>KanMind (Educational Project)</strong><br>
+                Project Owner (backend): Benjamin Tietz<br>
+                Email: mail@benjamin-tietz.com
+            </p>
+
+            <h2>4. Personal Data Collected</h2>
+            <p>
+                The backend API processes only the data required to provide authentication and basic
+                application functionality:
+            </p>
+            <ul>
+                <li>Email address</li>
+                <li>Full name (if provided)</li>
+                <li>Authentication tokens</li>
+            </ul>
+
+            <h2>5. Purpose of Data Processing</h2>
+            <p>
+                Personal data is processed exclusively for the following purposes:
+            </p>
+            <ul>
+                <li>User authentication</li>
+                <li>Access control to protected features</li>
+                <li>Security and system integrity</li>
+            </ul>
+
+            <h2>6. Authentication and Security</h2>
+            <p>
+                Authentication is handled via token-based authentication.
+                Passwords are securely hashed and never stored in plain text.
+                Tokens are used solely to maintain authenticated user sessions.
+            </p>
+
+            <h2>7. Cookies and Tracking</h2>
+            <p>
+                This application does not use cookies for tracking, analytics, or advertising purposes.
+                No third-party tracking services are integrated.
+            </p>
+
+            <h2>8. Data Sharing and Third Parties</h2>
+            <p>
+                No personal data is shared with third parties.
+                The application does not integrate external services that process user data.
+            </p>
+
+            <h2>9. Data Retention</h2>
+            <p>
+                Personal data is stored only for the duration necessary to support the educational
+                use of the application. Users may request deletion of their data at any time.
+            </p>
+
+            <h2>10. User Rights</h2>
+            <p>
+                Users have the right to request:
+            </p>
+            <ul>
+                <li>Access to their personal data</li>
+                <li>Correction of inaccurate data</li>
+                <li>Deletion of their personal data</li>
+            </ul>
+
+            <h2>11. Changes to this Privacy Policy</h2>
+            <p>
+                This Privacy Policy may be updated to reflect changes in the educational project or
+                legal requirements. The current version will always be available within the application.
+            </p>
+        </section>
+    </main>
+    <footer class="main_footer  w_full">
+        <nav class="d_flex_cs_gl">
+            <a href="../imprint/index.html" class="link">Imprint</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
